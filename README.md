@@ -4,7 +4,6 @@ O projeto consiste em criar um sistema para gerenciar links de artigos de tecnol
 Os links podem, também, ser editados e excluídos.
 
 Tecnologias utilizadas:
-- [] Backend: Node, API RESTful, Postman
-- [] Banco de Dados: ORM Mongoose
-- [] Frontend: HTML, Bootstrap, JQuery, AJAX
-
+- [X] Backend: Node, API RESTful, Postman
+- [X] Banco de Dados: ORM Mongoose
+- [X] Frontend: HTML, Bootstrap, JQuery, AJAX
