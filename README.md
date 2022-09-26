@@ -45,13 +45,14 @@ O projeto encontra-se em ambiente local, para rodar a aplicação seguir os pass
 - clonar o repositório localmente; <br>
 - abrir o terminal integrado e digitar o comando: **npm install** <br>
 OBS: esse comando fará a instalação dos pacotes do npm que foram utilizados para a criação do projeto e que estão salvos no arquivo package.json e também a pasta node_modules; <br>
-- criar o arquivo **.env** com as seguintes informações: <br>
-- **DB_CONN=mongodb+srv://<@user>:<@password>@apicluster.f0sp8vk.mongodb.net/?retryWrites=true&w=majority** <br>
-- foi utilizado o nodemon para ambiente de desenvolvimento, realizar a instalação do mesmo com o comando: **npm install nodemon**
+- digitar o comando: **npm install dotenv**
+- criar o arquivo **.env** na pasta raiz e inserir o modelo de informações a seguir: <br>
+**DB_CONN=mongodb+srv://<@user>:<@password>@apicluster.f0sp8vk.mongodb.net/?retryWrites=true&w=majority** <br>
+- foi utilizado o nodemon para ambiente de desenvolvimento, se necessário, realizar a instalação do mesmo com o comando: **npm install nodemon**
 - digitar o comando: **npm start** <br>
 OBS: esse comando fará a inicialização do arquivo index.js, que contém as informações de conexão com o express e o mongoose; <br>
 - aparecerá uma mensagem no terminal de que o banco de dados foi conectado; <br>
-- após conexão do backend e banco de dados, abrir o arquivo index.html (pasta frontend), onde será possível visualizar a aplicação funcionando. <br>
+- após conexão do backend e banco de dados, abrir o arquivo **index.html** (pasta frontend), onde será possível visualizar a aplicação funcionando. <br>
 
   <h3>Dificuldades:</h3>
 - utilização do JQuery e Ajax;
