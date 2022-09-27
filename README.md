@@ -52,7 +52,8 @@ OBS: esse comando fará a instalação dos pacotes do npm que foram utilizados p
 - digitar o comando: **npm start** <br>
 OBS: esse comando fará a inicialização do arquivo index.js, que contém as informações de conexão com o express e o mongoose; <br>
 - aparecerá uma mensagem no terminal de que o banco de dados foi conectado; <br>
-- após conexão do backend e banco de dados, abrir o arquivo **index.html** (pasta frontend), onde será possível visualizar a aplicação funcionando. <br>
+- após conexão do backend e banco de dados, abrir o arquivo **index.html** (que se encontra na pasta frontend), onde será possível visualizar a aplicação funcionando. <br>
+- OBS: os dados do banco de dados estarão visíveis no localhost:3000/article <br>
 
   <h3>Dificuldades:</h3>
 - utilização do JQuery e Ajax;
