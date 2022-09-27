@@ -28,7 +28,6 @@ $(document).ready(function () {
   });
 });
 
-
 // função para exibição das informações da tabela, listando os itens registrados no banco de dados
 function CarregarTela() {
   $.ajax({
@@ -98,12 +97,26 @@ function AbrirModalInserirDados() {
   $("#exampleModal").modal("show");
 }
 
+function VerificaUrl(string) {
+  try {
+    let url = new URL(string);
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 function InserirDados() {
   let body = {
     title: $("#inputTitulo").val(),
     url: $("#inputUrl").val(),
   };
+
+  if (!VerificaUrl(body.url)) {
+    alert("Favor usar uma url válida");
+    return;
+  }
+
   $.ajax({
     type: "POST",
     url: "http://localhost:3000/article/",
@@ -131,6 +144,11 @@ function AtualizarDados() {
     title: $("#inputTitulo").val(),
     url: $("#inputUrl").val(),
   };
+
+  if (!VerificaUrl(body.url)) {
+    alert("Favor usar uma url válida");
+    return;
+  }
   $.ajax({
     type: "PATCH",
     url: "http://localhost:3000/article/" + id,
